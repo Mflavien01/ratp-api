@@ -3,7 +3,7 @@ var list2 = [];
 var taille=0;
 var taille2=0;
 var mode=0;
-function time(){
+function horaire(){
   var direction = document.getElementById("direction").value;
   var gare = document.getElementById("gare").value;
 
@@ -19,5 +19,5 @@ xhr.onreadystatechange = function() {
 };
 xhr.open('GET', endpoint, true);
 xhr.send();  
-var myVar = setTimeout(time, 1000);
+setTimeout(horaire, 1000);
 }
