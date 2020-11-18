@@ -39,14 +39,12 @@ if (window.screen.width > window.screen.height){
 	document.body.style.backgroundImage = "url(train_tel.jpg)";
 }
 if (window.screen.width > window.screen.height){
-	document.getElementById("h1").style.fontSize="50px";
-	document.getElementById("vacation").style.fontSize="70px";
-	document.getElementById("p").style.fontSize="40px";
-	document.getElementById("clock").style.fontSize="40px";
+	document.getElementById("content").style.display: "";
+	document.getElementById("content").style.align-items:"";
+	document.getElementById("content").style.justify-content: "";
 } else{
-	document.getElementById("h1").style.fontSize="90px";
-	document.getElementById("vacation").style.fontSize="100px";
-	document.getElementById("p").style.fontSize="70px";
-	document.getElementById("clock").style.fontSize="70px";
+	document.getElementById("content").style.display: flex;
+	document.getElementById("content").style.align-items:center;
+	document.getElementById("content").style.justify-content: space-between;
 }
 })
