@@ -9,7 +9,7 @@ xhr.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		var response = JSON.parse(this.responseText);
 		var i=0;
-		if (response.result.schedules[i].message[7]=="t" || response.result.schedules[i].message[6]=="v"){
+		if (response.result.schedules[i].message[6]=="t" || response.result.schedules[i].message[5]=="v"){
 			i++;
 		}
 		document.getElementById("horaire1").innerHTML= "".concat("Prochain passage à : ", response.result.schedules[i].message);
