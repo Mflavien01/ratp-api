@@ -10,18 +10,19 @@
       <h1>Horaire RATP</h1>
       <br>
       <h2>Choisisez votre direction</h2>
-      <label for="unit" id="unitLabel">Choisir votre direction : </label>
+      <label for="direction" id="unitLabel">Direction : </label>
         <select name="unit" id="direction">
-            <option value="aero" id="week" selected>Aéroport Charles de gaules</option>
-            <option value="stremi" id="day">Jours</option>
-            <option value="hour" id="hour">Heures</option>
-            <option value="minute" id="minute">Minutes</option>
-            <option value="second" id="second">Secondes</option>
+            <option value="aero" id="aerop" selected>Aéroport CDG</option>
+            <option value="strem" id="strem">St Rémy-lès-Chevreuse</option>
         </select>
       <h2>Choisisez votre arret</h2>
-      <p><input type="text" id="arret" ></input>    <input type="button" onClick="ajoutlist()" value="Ajouter la valeur"></input></p></div>
+      <label for="unit" id="unitLabel">Gare :</label>
+        <select name="gare" id="gare">
+            <option value="mas" id="aerop" selected>Massy-Palaiseau</option>
+            <option value=ors" id="strem">Orsay-ville</option>
+            <option value="gif" id="strem">Gif-sur-Yvette</option>
+        </select>
       <p id="horaire"></p>
-      <input type="button" onClick="erase()" value="Effacer la liste"></input>
       <br>
     <div>
     <br>
