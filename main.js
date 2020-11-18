@@ -19,7 +19,7 @@ xhr.onreadystatechange = function() {
 		}
 		document.getElementById("horaire1").innerHTML= "".concat("Prochain passage à : ", response.result.schedules[i].message);
 		document.getElementById("horaire2").innerHTML="".concat("2ème passage à : ", response.result.schedules[i+j].message);
-		document.getElementById("horaire2").innerHTML="".concat("3ème passage à : ", response.result.schedules[i+j+1].message);
+		document.getElementById("horaire3").innerHTML="".concat("3ème passage à : ", response.result.schedules[i+j+1].message);
 	}
 
 };
