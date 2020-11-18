@@ -8,7 +8,7 @@ var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		var response = JSON.parse(this.responseText);
-		document.getElementById("horaire1").innerHTML=response.result.schedules[0].message;
+		document.getElementById("horaire1").innerHTML= "".concat("Prochain passage à :", response.result.schedules[0].message);
 	}
 
 };
