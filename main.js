@@ -13,7 +13,7 @@ var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		var response = JSON.parse(this.responseText);
-		console.log(this.responseText);
+		document.getElementById("gare").innerHtml=response.result.schedules[0].message;
 	}
 
 };
