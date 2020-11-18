@@ -17,8 +17,9 @@ xhr.onreadystatechange = function() {
 		if (response.result.schedules[i+j].message[6]=="t" || response.result.schedules[i+j].message[5]=="v"){
 			j++;
 		}
-			document.getElementById("horaire1").innerHTML= "".concat("Prochain passage à : ", response.result.schedules[i].message);
-			document.getElementById("horaire2").innerHTML="".concat("2ème passage à : ", response.result.schedules[i+j].message);
+		document.getElementById("horaire1").innerHTML= "".concat("Prochain passage à : ", response.result.schedules[i].message);
+		document.getElementById("horaire2").innerHTML="".concat("2ème passage à : ", response.result.schedules[i+j].message);
+		document.getElementById("horaire2").innerHTML="".concat("3ème passage à : ", response.result.schedules[i+j+1].message);
 	}
 
 };
