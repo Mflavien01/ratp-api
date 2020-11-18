@@ -35,8 +35,8 @@ xhr.send();
 
 if (window.screen.width > window.screen.height){
 	document.body.style.backgroundImage = "url(train.jpg)";
+} else{
+	document.body.style.backgroundImage = "url(train_tel.jpg)";
 	document.getElementById("content").style.display=null;
-	//document.getElementById("content").style.align-items=="";
-	//document.getElementById("content").style.justify-content=="";
 }	
 })
