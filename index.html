@@ -2,31 +2,23 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="google-site-verification" content="LV7NhMQcBAR3COJTBV54PQ6sDAtCVJXRuE_27MTooSQ" />
     <link href ="style.css" rel="stylesheet" type="text/css">
-    <title>Tirage au sort</title> 
+    <title>Horaire RATP</title> 
   </head>
   </body>
     <div>
-      <h1>Tirage au sort</h1>
+      <h1>Horaire RATP</h1>
       <br>
       <br>
-      <h2>Tirage au sort d'une liste ecrite <br> Tirage au sort d'un nombre "a" à un nombre "b"</h2>
-      <br>
-      <label for="unit">Choisir le type de tirage : </label>
-        <select name="unit" id="unit">
-            <option value="plu" selected>Tirage entre plusieurs valeurs (chiffre, mot,...)</option>
-            <option value="ab" >Tirage d'un nombre "a" à un nombre "b"</option>
-        </select>
-      <br>
-      <div id="plu"><h3>Entrez vos valeurs :</h3>
-      <p><input type="text" id="nombre" ></input>    <input type="button" onClick="ajoutlist()" value="Ajouter la valeur"></input></p></div>
-      <br>
-      <div id="ab"><h3>Entrez vos 2 nombres :</h3>
-      <p><input type="number" id="nombre2" ></input>    <input type="button" onClick="ajoutlist2()" value="Ajouter la valeur"></input></p></div> 
-      <p id="list"></p>
-      <input type="button" onClick="tir()" value="Tirer au sort"></input>
-      <p id="tirage"></p>
+      <h2>Choisisez votre moyen de transport</h2>
+      <p><input type="text" id="transport" ></input>    <input type="button" onClick="ajoutlist()" value="Ajouter la valeur"></input></p></div>
+      <h2>Choisisez votre ligne</h2>
+      <p><input type="text" id="ligne" ></input>    <input type="button" onClick="ajoutlist()" value="Ajouter la valeur"></input></p></div>
+      <h2>Choisisez votre direction</h2>
+      <p><input type="text" id="direction" ></input>    <input type="button" onClick="ajoutlist()" value="Ajouter la valeur"></input></p></div>
+      <h2>Choisisez votre arret</h2>
+      <p><input type="text" id="arret" ></input>    <input type="button" onClick="ajoutlist()" value="Ajouter la valeur"></input></p></div>
+      <p id="horaire"></p>
       <input type="button" onClick="erase()" value="Effacer la liste"></input>
       <br>
     <div>
