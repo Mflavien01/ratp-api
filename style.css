@@ -66,3 +66,23 @@ a:hover {
 	align-items:center;
 	justify-content: space-between;
 }
+#gares{
+	font-family: impact;
+	font-size: 22 px;
+	text-align: center;
+	margin:5px;
+	padding: 10px;
+	width: 25%;
+	border:solid 1px black;
+	background-color: #E1E1E5;
+}
+#reponses{
+	font-family: impact;
+	font-size: 22 px;
+	text-align: center;
+	margin:5px;
+	padding: 10px;
+	width: 25%;
+	border:solid 1px black;
+	background-color: #E1E1E5;;
+}
