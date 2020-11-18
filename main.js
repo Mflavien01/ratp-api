@@ -7,21 +7,17 @@ var x=setInterval(function (){
   var direction = document.getElementById("direction").value;
   var gare = document.getElementById("gare").value;
 
-  if (direction=="aero"){
-    if (gare=="mas"){ 
-    }
-    if (gare=="ors"){ 
-    }
-    if (gare=="gif"){ 
-    }
-  }
-  if (direction=="strem"){
-    if (gare=="mas"){ 
-    }
-    if (gare=="ors"){ 
-    }
-    if (gare=="gif"){ 
-    }
-  }  
+  var endpoint = ''.concat('https://api-ratp.pierre-grimaud.fr/v4/schedules/rers/b/',gare,'/',direction);
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		var response = JSON.parse(this.responseText);
+		
+	}
+
+};
+xhr.open('GET', endpoint, true);
+xhr.send();  
   
 })
