@@ -9,7 +9,7 @@ xhr.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		var response = JSON.parse(this.responseText);
 		var i=0;
-		if (response.result.schedules[i].message="Train terminus V.A" || response.result.schedules[i].message="Sans voyageurs V.A"){
+		if (response.result.schedules[i].message=="Train terminus V.A" || response.result.schedules[i].message=="Sans voyageurs V.A"){
 			i++;
 		}
 		document.getElementById("horaire1").innerHTML=response.result.schedules[0].message;
