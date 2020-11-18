@@ -4,6 +4,8 @@ var j=1;
 localStorage.removeItem("direction");
 localStorage.removeItem("gare");
 
+alert(localStorage.getItem("test"));
+
 //document.getElementById("direction").value=localStorage.getItem("direction");
 //document.getElementById("gare").value=localStorage.getItem("gare");
 
