@@ -1,3 +1,7 @@
+var i=0;
+var j=1;
+var k=1;
+
 var x = setInterval(function (){
   var direction = document.getElementById("direction").value;
   var gare = document.getElementById("gare").value;
@@ -8,9 +12,6 @@ var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
 		var response = JSON.parse(this.responseText);
-		var i=0;
-		var j=1;
-		var k=1;
 		if (response.result.schedules[i].message[6]=="t" || response.result.schedules[i].message[5]=="v"){
 			i++;
 		}
