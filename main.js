@@ -1,6 +1,10 @@
 var i=0;
 var j=1;
 
+var y = setInterval(function() {
+	if (innerHeight>800){
+		document.body.style.height="".concat(innerHeight,"px");
+	}
 var x = setInterval(function (){
   var direction = document.getElementById("direction").value;
   var gare = document.getElementById("gare").value;
@@ -33,4 +37,15 @@ if (window.screen.width > window.screen.height){
 	document.body.style.backgroundImage = "url(train.jpg)";
 } else{
 	document.body.style.backgroundImage = "url(train_tel.jpg)";
+}
+if (window.screen.width > window.screen.height){
+	document.getElementById("h1").style.fontSize="50px";
+	document.getElementById("vacation").style.fontSize="70px";
+	document.getElementById("p").style.fontSize="40px";
+	document.getElementById("clock").style.fontSize="40px";
+} else{
+	document.getElementById("h1").style.fontSize="90px";
+	document.getElementById("vacation").style.fontSize="100px";
+	document.getElementById("p").style.fontSize="70px";
+	document.getElementById("clock").style.fontSize="70px";
 }
