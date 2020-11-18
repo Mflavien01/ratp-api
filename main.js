@@ -12,9 +12,9 @@ xhr.onreadystatechange = function() {
 		if (response.result.schedules[i].message=="Train terminus V.A" || response.result.schedules[i].message=="Sans voyageurs V.A"){
 			i++;
 		}
-		document.getElementById("horaire1").innerHTML=response.result.schedules[0].message;
-		document.getElementById("horaire2").innerHTML=response.result.schedules[1].message;
-		document.getElementById("horaire3").innerHTML=response.result.schedules[2].message;
+		document.getElementById("horaire1").innerHTML=response.result.schedules[i].message;
+		document.getElementById("horaire2").innerHTML=response.result.schedules[i+1].message;
+		document.getElementById("horaire3").innerHTML=response.result.schedules[i+2].message;
 	}
 
 };
