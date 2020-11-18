@@ -19,7 +19,5 @@ xhr.onreadystatechange = function() {
 };
 xhr.open('GET', endpoint, true);
 xhr.send();  
-
-setTimeout(time, 1000)
 	
 }
