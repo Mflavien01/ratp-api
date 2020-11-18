@@ -19,5 +19,5 @@ xhr.onreadystatechange = function() {
 };
 xhr.open('GET', endpoint, true);
 xhr.send();  
-setTimeout(function(){time();}, 1000);
+var myVar = setTimeout(time, 1000);
 }
