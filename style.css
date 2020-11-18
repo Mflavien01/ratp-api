@@ -1,1 +1,64 @@
+body {
+  	background-image: url(./dee.jpg);
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+  	height: 800px;
+  	color : White;
+	text-align: center;
+	font-weight: bold;
+}
+p {
+	font-size : 25px;
+}
+h1{
+	background-color : Black; 
+	color: White;
+	font-family: arial;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	border: 2px solid black;
+	width : 400 px;
+	border-radius: 100px;
+	padding: 10px;
+	margin-left:5%;
+	margin-right:5%;
+}
+label {
+	color :white;
+	padding-right: 10px;
+	font-size : 19px;
+}
 
+select {
+	padding: 2px 5px;
+	font-size : 17px;
+}
+h2 {
+	background-color : white; 
+	color: black;
+	font-family: arial;
+	font-style :italic;
+	font-size: 20px;
+	text-align: center;
+	border: 2px solid white;
+	width : 400 px;
+	border-radius: 15px;
+	padding: 20px;
+	margin:20px;
+	margin-left:25%;
+	margin-right:25%;
+}
+#lien {
+	font-family: impact;
+	font-size: 22 px;
+	text-align: center;
+	margin:5px;
+	padding: 10px;
+	width: 25%;
+	border:solid 1px black;
+	background-color: #E1E1E5;
+}
+a:hover {
+	background: lightgreen;
+}
