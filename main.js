@@ -39,10 +39,5 @@ if (window.screen.width > window.screen.height){
 	//document.getElementById("content").style.display=="";
 	//document.getElementById("content").style.align-items=="";
 	//document.getElementById("content").style.justify-content=="";
-} else{
-	document.body.style.backgroundImage = "url(train_tel.jpg)";
-	document.getElementById("content").style.display==flex;
-	document.getElementById("content").style.align-items==center;
-	document.getElementById("content").style.justify-content==space-between;
 }	
 })
