@@ -35,8 +35,7 @@ xhr.send();
 
 if (window.screen.width > window.screen.height){
 	document.body.style.backgroundImage = "url(train.jpg)";
-	el.style.removeProperty('content');
-	//document.getElementById("content").style.display=="";
+	document.getElementById("content").style.display=null;
 	//document.getElementById("content").style.align-items=="";
 	//document.getElementById("content").style.justify-content=="";
 }	
