@@ -1,9 +1,12 @@
 var i=0;
 var j=1;
 
-if (localStorage.getItem("direction")!=="null" && localStorage.getItem("gare")!=="null"){
+if (localStorage.getItem("direction")!="null" && localStorage.getItem("gare")!="null"){
 	document.getElementById("direction").value=localStorage.getItem("direction");
 	document.getElementById("gare").value=localStorage.getItem("gare");
+}else{
+	document.getElementById("direction").value=R;
+	document.getElementById("gare").value=Massy+palaiseau;
 }
 
 var x = setInterval(function (){
