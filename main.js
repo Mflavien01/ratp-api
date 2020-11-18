@@ -49,3 +49,4 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("p").style.fontSize="70px";
 	document.getElementById("clock").style.fontSize="70px";
 }
+})
