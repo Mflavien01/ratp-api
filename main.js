@@ -62,8 +62,8 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("horaire1").style.fontSize="60px";
 	document.getElementById("horaire2").style.fontSize="60px";
 	document.getElementById("horaire3").style.fontSize="60px";
-	document.getElementById("titre").style.marginLeft = "80%";
-	document.getElementById("titre").style.marginRight = "80%";
+	document.getElementById("titre").style.marginLeft = "0%";
+	document.getElementById("titre").style.marginRight = "0%";
 	document.getElementById("responses").style.marginHead = "100px";
 }
 }, 1000)
