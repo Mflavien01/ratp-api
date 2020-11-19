@@ -38,6 +38,6 @@ if (window.screen.width > window.screen.height){
 } else{
 	document.body.style.backgroundImage = "url(train_tel.jpg)";
 	document.getElementById("content").style.display=null;
-	document.getElementById("p").style.fontSize="70px";
+	document.getElementById("p").style.fontSize="70";
 }	
 }, 1000)
