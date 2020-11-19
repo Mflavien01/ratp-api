@@ -6,6 +6,8 @@ var x = setInterval(function (){
 	}
 	var direction = document.getElementById("direction").value;
  	var gare = document.getElementById("gare").value;
+	localStorage.setItem("direction",direction);
+	localStorage.setItem("gare",gare);
 
   var endpoint = ''.concat('https://api-ratp.pierre-grimaud.fr/v4/schedules/rers/b/',gare,'/',direction);
 
@@ -27,8 +29,6 @@ xhr.onreadystatechange = function() {
 };
 xhr.open('GET', endpoint, true);
 xhr.send();  
-//localStorage.setItem("direction",direction);
-//localStorage.setItem("gare",gare);
 		
 if (window.screen.width > window.screen.height){
 	document.body.style.backgroundImage = "url(train.jpg)";
