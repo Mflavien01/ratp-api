@@ -50,4 +50,5 @@ if (window.screen.width > window.screen.height){
 		document.getElementById("vacation").style.fontSize="100px";
 		document.getElementById("p").style.fontSize="70px";
 		document.getElementById("clock").style.fontSize="70px";
-}, 1000)
+	}
+},1000)
