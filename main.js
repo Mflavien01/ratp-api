@@ -41,9 +41,9 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("reponses").style.width = "30%";
 	document.getElementById("content").style.display ="flex";
 	document.getElementById("content").style.textAlign ="center";
-	document.getElementById("horaire1").style.fontSize="35px";
-	document.getElementById("horaire2").style.fontSize="35px";
-	document.getElementById("horaire3").style.fontSize="35px";
+	document.getElementById("horaire1").style.fontSize="25px";
+	document.getElementById("horaire2").style.fontSize="25px";
+	document.getElementById("horaire3").style.fontSize="25px";
 	document.getElementById("titre").style.marginLeft = "30%";
 	document.getElementById("titre").style.marginRight = "30%";
 	document.getElementById("lien").style.whidth = "25%";
