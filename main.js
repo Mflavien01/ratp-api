@@ -48,6 +48,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("titre").style.marginRight = "30%";
 	document.getElementById("lien").style.whidth = "25%";
 	document.getElementById("lien").style.frontSize = "22px";
+	document.getElementById("br").innerHTML = "";
 } else{
 	document.body.style.backgroundImage = "url(train_tel.jpg)";
 	document.getElementById("dirLabel").style.fontSize="60px";
@@ -67,5 +68,6 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("titre").style.marginRight = "5%";
 	document.getElementById("lien").style.whidth = "30%";
 	document.getElementById("lien").style.frontSize = "30px";
+	document.getElementById("br").innerHTML = "<br><br><br><br>";
 }
 }, 1000)
