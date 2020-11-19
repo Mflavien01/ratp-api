@@ -35,7 +35,7 @@ xhr.send();
 
 if (window.screen.width > window.screen.height){
 	document.body.style.backgroundImage = "url(train.jpg)";
-} else{
+}else{
 	document.body.style.backgroundImage = "url(train_tel.jpg)";
 }
 if (window.screen.width > window.screen.height){
@@ -47,4 +47,5 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("reponses").style.fontSize="50px";
 	document.getElementById("p").style.fontSize="50px";
 	document.getElementById("content").style.display=null;
+}
 }, 1000)
