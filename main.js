@@ -29,7 +29,6 @@ xhr.open('GET', endpoint, true);
 xhr.send();  
 //localStorage.setItem("direction",direction);
 //localStorage.setItem("gare",gare);
-},1000)
 
 if (window.screen.width > window.screen.height){
 	document.body.style.backgroundImage = "url(train.jpg)";
