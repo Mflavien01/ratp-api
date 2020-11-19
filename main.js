@@ -38,7 +38,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("reponses").style.fontSize = "70px";
 } else{
 	document.body.style.backgroundImage = "url(train_tel.jpg)";
-	document.getElementById("h1").style.fontSize="90px";
+	//document.getElementById("h1").style.fontSize="90px";
 	document.getElementById("gareLabel").style.fontSize="70px";
 	document.getElementById("gare").style.fontSize = "70px";
 	document.getElementById("reponses").style.fontSize = "70px";
