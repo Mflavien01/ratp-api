@@ -1,14 +1,11 @@
 var i=0;
-var j=1;
-
-
-	
+var j=1;	
 var x = setInterval(function (){
-  if (innerHeight>800){
+	if (innerHeight>800){
 		document.body.style.height="".concat(innerHeight,"px");
 	}
 	var direction = document.getElementById("direction").value;
-  var gare = document.getElementById("gare").value;
+ 	var gare = document.getElementById("gare").value;
 
   var endpoint = ''.concat('https://api-ratp.pierre-grimaud.fr/v4/schedules/rers/b/',gare,'/',direction);
 
