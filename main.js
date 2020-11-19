@@ -40,15 +40,14 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("content").style.display=null;
 	document.getElementById("p").style.fontSize="70";
 }
-	if (window.screen.width > window.screen.height){
-		//document.getElementById("h1").style.fontSize="50px";
-		//document.getElementById("vacation").style.fontSize="70px";
-		//document.getElementById("p").style.fontSize="40px";
-		//document.getElementById("clock").style.fontSize="40px";
+if (window.screen.width > window.screen.height){
+		document.getElementById("h1").style.fontSize="50px";
+		document.getElementById("vacation").style.fontSize="70px";
+		document.getElementById("p").style.fontSize="40px";
+		document.getElementById("clock").style.fontSize="40px";
 	} else{
 		document.getElementById("gares").style.fontSize="90px";
-		//document.getElementById("vacation").style.fontSize="100px";
-		//document.getElementById("p").style.fontSize="70px";
-		//document.getElementById("clock").style.fontSize="70px";
-	}
-},1000)
+		document.getElementById("vacation").style.fontSize="100px";
+		document.getElementById("p").style.fontSize="70px";
+		document.getElementById("clock").style.fontSize="70px";
+}, 1000)
