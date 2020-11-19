@@ -34,6 +34,7 @@ if (window.screen.width > window.screen.height){
 	document.body.style.backgroundImage = "url(train.jpg)";
 	//document.getElementById("h1").style.fontSize="50px";
 	document.getElementById("dirLabel").style.fontSize="20px";
+	document.getElementById("direction").style.fontSize="20px";
 	document.getElementById("gareLabel").style.fontSize="20px";
 	document.getElementById("gare").style.fontSize = "20px";
 	document.getElementById("reponses").style.fontSize = "70px";
@@ -41,6 +42,7 @@ if (window.screen.width > window.screen.height){
 	document.body.style.backgroundImage = "url(train_tel.jpg)";
 	//document.getElementById("h1").style.fontSize="90px";
 	document.getElementById("dirLabel").style.fontSize="70px";
+	document.getElementById("direction").style.fontSize="70px";
 	document.getElementById("gareLabel").style.fontSize="70px";
 	document.getElementById("gare").style.fontSize = "70px";
 	document.getElementById("reponses").style.fontSize = "70px";
