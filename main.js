@@ -36,7 +36,8 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("direction").style.fontSize="20px";
 	document.getElementById("gareLabel").style.fontSize="20px";
 	document.getElementById("gare").style.fontSize = "20px";
-	document.getElementById("gares").style.width = "30";
+	document.getElementById("gares").style.width = "30%";
+	document.getElementById("reponses").style.width = "30%";
 	document.getElementById("content").style.display ="flex";
 	document.getElementById("content").style.textAlign ="center";
 	document.getElementById("horaire1").style.fontSize="20px";
@@ -48,10 +49,11 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("direction").style.fontSize="70px";
 	document.getElementById("gareLabel").style.fontSize="70px";
 	document.getElementById("gare").style.fontSize = "70px";
-	document.getElementById("reponses").style.fontSize = "70px";
+	document.getElementById("reponses").style.fontSize = "60px";
 	document.getElementById("content").style.display ="block";
 	document.getElementById("content").style.textAlign ="center";
 	document.getElementById("gares").style.width = "80%";
+	document.getElementById("reponses").style.width = "80%";
 	document.getElementById("horaire1").style.fontSize="70px";
 	document.getElementById("horaire2").style.fontSize="70px";
 	document.getElementById("horaire3").style.fontSize="70px";
