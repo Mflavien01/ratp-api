@@ -50,7 +50,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("lien").style.frontSize = "22px";
 	document.getElementById("br").innerHTML = "";
 	document.getElementById("content").style.marginLeft = null;
-	document.getElementById("content").style.marginRight = null";
+	document.getElementById("content").style.marginRight = null;
 } else{
 	document.body.style.backgroundImage = "url(train_tel.jpg)";
 	document.getElementById("dirLabel").style.fontSize="60px";
