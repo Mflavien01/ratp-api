@@ -46,6 +46,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("gare").style.fontSize = "70px";
 	document.getElementById("reponses").style.fontSize = "70px";
 	document.getElementById("content").style.display ="block";
+	document.getElementById("content").style.alignItems ="center";
 	document.getElementById("gares").style.width = "80%";
 }
 }, 1000)
