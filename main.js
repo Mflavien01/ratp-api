@@ -5,8 +5,8 @@ if (localStorage.getItem("direction") === null){
 	var direction = document.getElementById("direction").value;
  	var gare = document.getElementById("gare").value;
 }else {
-	document.getElementById("direction").value=localStorage.getItem("direction");
-	document.getElementById("gare").value=localStorage.getItem("gare");
+	//document.getElementById("direction").value=localStorage.getItem("direction");
+	//document.getElementById("gare").value=localStorage.getItem("gare");
 }
 
 var x = setInterval(function (){
