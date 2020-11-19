@@ -46,7 +46,8 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("horaire3").style.fontSize="20px";
 	document.getElementById("titre").style.marginLeft = "30%";
 	document.getElementById("titre").style.marginRight = "30%";
-	document.getElementById("responses").style.marginHead = "0px";
+	document.getElementById("liens").style.whidth = "25%";
+	document.getElementById("liens").style.frontSize = "22px";
 } else{
 	document.body.style.backgroundImage = "url(train_tel.jpg)";
 	document.getElementById("dirLabel").style.fontSize="60px";
@@ -64,6 +65,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("horaire3").style.fontSize="60px";
 	document.getElementById("titre").style.marginLeft = "5%";
 	document.getElementById("titre").style.marginRight = "5%";
-	document.getElementById("reponses").style.marginHead = "100px";
+	document.getElementById("liens").style.whidth = "30%";
+	document.getElementById("liens").style.frontSize = "30px";
 }
 }, 1000)
