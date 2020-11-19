@@ -39,10 +39,10 @@ if (window.screen.width > window.screen.height){
 if (window.screen.width > window.screen.height){
 	//document.getElementById("h1").style.fontSize="50px";
 	//document.getElementById("p").style.fontSize="40px";
-	document.p.style.backgroundColor = "40px";
+	document.getElementById("p").style.fontSize = "40px";
 } else{
 	//document.getElementById("h1").style.fontSize="90px";
 	//document.getElementById("p").style.fontSize="70px";
-	document.p.style.backgroundColor = "70px";
+	document.getElementById("p").style.fontSize = "70px";
 }
 }, 1000)
