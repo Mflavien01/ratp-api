@@ -36,7 +36,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("direction").style.fontSize="20px";
 	document.getElementById("gareLabel").style.fontSize="20px";
 	document.getElementById("gare").style.fontSize = "20px";
-	document.getElementById("gares").style.width = "30
+	document.getElementById("gares").style.width = "30";
 	document.getElementById("content").style.display ="flex";
 	document.getElementById("content").style.textAlign ="center";
 	document.getElementById("horaire1").style.fontSize="20px";
