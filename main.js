@@ -71,6 +71,6 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("lien").style.whidth = "30%";
 	document.getElementById("lien").style.frontSize = "30px";
 	document.getElementById("br").innerHTML = "<br><br><br><br>";
-	document.getElementById("content").style.marginRight = "50%";
+	document.getElementById("content").style.marginLeft = "50%";
 }
 }, 1000)
