@@ -40,7 +40,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("content").style.display=null;
 	document.getElementById("p").style.fontSize="70";
 }
-//if (window.screen.width > window.screen.height){
+	if (window.screen.width > window.screen.height){
 		//document.getElementById("h1").style.fontSize="50px";
 		document.getElementById("vacation").style.fontSize="70px";
 		document.getElementById("p").style.fontSize="40px";
