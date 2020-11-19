@@ -32,7 +32,7 @@ xhr.send();
 		
 if (window.screen.width > window.screen.height){
 	document.body.style.backgroundImage = "url(train.jpg)";
-	document.getElementById("h1").style.fontSize="50px";
+	//document.getElementById("h1").style.fontSize="50px";
 	document.getElementById("gareLabel").style.fontSize="20px";
 	document.getElementById("gare").style.fontSize = "20px";
 	document.getElementById("reponses").style.fontSize = "70px";
