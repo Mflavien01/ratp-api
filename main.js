@@ -44,6 +44,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("horaire1").style.fontSize="20px";
 	document.getElementById("horaire2").style.fontSize="20px";
 	document.getElementById("horaire3").style.fontSize="20px";
+	document.getElementById("titre").style.width = "30%";
 } else{
 	document.body.style.backgroundImage = "url(train_tel.jpg)";
 	document.getElementById("dirLabel").style.fontSize="60px";
@@ -59,5 +60,6 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("horaire1").style.fontSize="60px";
 	document.getElementById("horaire2").style.fontSize="60px";
 	document.getElementById("horaire3").style.fontSize="60px";
+	document.getElementById("titre").style.width = "80%";
 }
 }, 1000)
