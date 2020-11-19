@@ -29,20 +29,20 @@ xhr.open('GET', endpoint, true);
 xhr.send();  
 //localStorage.setItem("direction",direction);
 //localStorage.setItem("gare",gare);
-
-if (window.screen.width > window.screen.height){
-	document.body.style.backgroundImage = "url(train.jpg)";
-} else{
-	document.body.style.backgroundImage = "url(train_tel.jpg)";
-}
 		
 if (window.screen.width > window.screen.height){
-	//document.getElementById("h1").style.fontSize="50px";
-	document.getElementById("p").style.fontSize="40px";
-	//document.getElementById("p").style.fontSize = "40px";
+	document.body.style.backgroundImage = "url(train.jpg)";
+	document.getElementById("h1").style.fontSize="50px";
+	document.getElementById("gareLabel").style.fontSize="20px";
+	document.getElementById("gare").style.fontSize = "20px";
+	document.getElementById("reponses").style.fontSize = "70px";
 } else{
-	//document.getElementById("h1").style.fontSize="90px";
-	document.getElementById("p").style.fontSize="70px";
-	//document.getElementById("p").style.fontSize = "70px";
+	document.body.style.backgroundImage = "url(train_tel.jpg)";
+	document.getElementById("h1").style.fontSize="90px";
+	document.getElementById("gareLabel").style.fontSize="70px";
+	document.getElementById("gare").style.fontSize = "70px";
+	document.getElementById("reponses").style.fontSize = "70px";
+	document.getElementById("reponses").style.fontSize = "70px";
+	document.getElementById("content").style.display =null;
 }
 }, 1000)
