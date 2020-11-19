@@ -48,5 +48,6 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("content").style.display ="block";
 	document.getElementById("content").style.alignItems ="center";
 	document.getElementById("gares").style.width = "80%";
+	document.getElementById("reponses").style.fontSize="70px";
 }
 }, 1000)
