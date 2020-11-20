@@ -1,15 +1,14 @@
 var i=0;
 var j=1;
-
-if (localStorage.getItem("direction")!==null || localStorage.getItem("direction")!==null){
-	var direction=localStorage.getItem("direction");
- 	var gare=localStorage.getItem("gare");
-	document.getElementById("directionSelect").value=direction;
-	document.getElementById("gareSelect").value=gare;
+window.addEventListener('load', function () {
+       if (localStorage.getItem("direction")!==null || localStorage.getItem("direction")!==null){
+	document.getElementById("directionSelect").value=localStorage.getItem("direction");
+	document.getElementById("gareSelect").value=localStorage.getItem("gare");
 }else {
 	var direction;
  	var gare;
 }
+}, false);
 
 var x = setInterval(function (){
 	if (innerHeight>800){
