@@ -4,8 +4,8 @@ var j=1;
 if (localStorage.getItem("direction")!==null || localStorage.getItem("direction")!==null){
 	var direction=localStorage.getItem("direction");
  	var gare=localStorage.getItem("gare");
-	document.getElementById("direction").value=direction;
-	document.getElementById("gare").value=gare;
+	document.getElementById("directionSelect").value=direction;
+	document.getElementById("gareSelect").value=gare;
 }else {
 	var direction;
  	var gare;
