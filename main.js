@@ -14,8 +14,8 @@ var x = setInterval(function (){
 	if (innerHeight>800){
 		document.body.style.height="".concat(innerHeight,"px");
 	}
-	var direction = document.getElementById("direction").value;
- 	var gare = document.getElementById("gare").value;
+	var direction = document.getElementById("directionSelect").value;
+ 	var gare = document.getElementById("gareSelect").value;
 	localStorage.setItem("direction",direction);
 	localStorage.setItem("gare",gare);
 
