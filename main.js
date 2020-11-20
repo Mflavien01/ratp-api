@@ -1,6 +1,6 @@
 var i=0;
 var j=1;
-alert (localStorage.getItem("gare"));
+
 if (localStorage.getItem("direction")=="null" || localStorage.getItem("direction")=="null"){
 	var direction = document.getElementById("direction").value;
  	var gare = document.getElementById("gare").value;
