@@ -1,6 +1,6 @@
 var i=0;
 var j=1;
-window.addEventListener('load', function () {
+function testStorage() {
        if (localStorage.getItem("direction")!==null || localStorage.getItem("direction")!==null){
 	document.getElementById("directionSelect").value=localStorage.getItem("direction");
 	document.getElementById("gareSelect").value=localStorage.getItem("gare");
@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
 	var direction;
  	var gare;
 }
-}, false);
+}
 
 var x = setInterval(function (){
 	if (innerHeight>800){
