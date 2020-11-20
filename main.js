@@ -1,13 +1,13 @@
 var i=0;
 var j=1;
 
-/*if (localStorage.getItem("direction") === null){
+if (localStorage.getItem("direction") === null){
 	var direction = document.getElementById("direction").value;
  	var gare = document.getElementById("gare").value;
 }else {
-	//document.getElementById("direction").value=localStorage.getItem("direction");
-	//document.getElementById("gare").value=localStorage.getItem("gare");
-}*/
+	document.getElementById(localStorage.getItem("direction")).selected="selected";
+	document.getElementById(localStorage.getItem("gare")).selected="selected";
+}
 
 var x = setInterval(function (){
 	if (innerHeight>800){
