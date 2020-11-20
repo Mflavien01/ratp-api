@@ -1,12 +1,12 @@
 var i=0;
 var j=1;
 
-if (localStorage.getItem("direction")=="null" || localStorage.getItem("direction")=="null"){
-	var direction = document.getElementById("direction").value;
- 	var gare = document.getElementById("gare").value;
-}else {
+if (localStorage.getItem("direction")=!"null" || localStorage.getItem("direction")=!"null"){
 	document.getElementById("direction").value=localStorage.getItem("direction");
 	document.getElementById("gare").value=localStorage.getItem("gare");
+}else {
+	var direction = document.getElementById("direction").value;
+ 	var gare = document.getElementById("gare").value;
 }
 
 var x = setInterval(function (){
