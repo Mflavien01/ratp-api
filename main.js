@@ -1,5 +1,6 @@
 var i=0;
 var j=1;
+localStorage.clear();
 console.log(localStorage.length);
 function testStorage() {
        if (localStorage.getItem("direction")!==null || localStorage.getItem("direction")!==null){
