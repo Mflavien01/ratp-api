@@ -1,7 +1,7 @@
 var i=0;
 var j=1;
 
-if (localStorage.getItem("direction")==null || localStorage.getItem("direction")==null){
+if (localStorage.getItem("direction")=="null" || localStorage.getItem("direction")=="null"){
 	var direction = document.getElementById("direction").value;
  	var gare = document.getElementById("gare").value;
 }else {
