@@ -1,9 +1,7 @@
 var i=0;
 var j=1;
-localStorage.clear();
-console.log(localStorage.length);
 function testStorage() {
-       if (localStorage.getItem("direction")!==null || localStorage.getItem("direction")!==null){
+       if (localStorage.lenght!=0){
 	document.getElementById("directionSelect").value=localStorage.getItem("direction");
 	document.getElementById("gareSelect").value=localStorage.getItem("gare");
 }else {
