@@ -2,8 +2,10 @@ var i=0;
 var j=1;
 
 if (localStorage.getItem("direction")!==null || localStorage.getItem("direction")!==null){
-	document.getElementById("direction").value=localStorage.getItem("direction");
-	document.getElementById("gare").value=localStorage.getItem("gare");
+	var direction=localStorage.getItem("direction");
+ 	var gare=localStorage.getItem("gare");
+	document.getElementById("direction").value=direction;
+	document.getElementById("gare").value=gare;
 }else {
 	var direction;
  	var gare;
