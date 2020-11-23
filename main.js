@@ -1,6 +1,6 @@
 var i=0;
 var j=1;
-var storage=true;
+var storage=false;
 
 function testStorage() {
     if (localStorage.lenght!=0){
