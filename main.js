@@ -8,8 +8,8 @@ function testStorage() {
 	    document.getElementById("gareSelect").value=localStorage.getItem("gare");
 	    storage=true;
 	}else {
-		var direction;
- 		var gare;
+		var direction = document.getElementById("directionSelect").value;
+ 		var gare = document.getElementById("gareSelect").value;
 		storage=true;
 	}
 }
