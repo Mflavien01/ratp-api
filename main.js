@@ -14,6 +14,15 @@ function testStorage() {
 	}
 }
 
+function compteARebours(textIn){
+	var textOut;
+	if (isNaN(parseInt("".concat(textIn[0], textIn[1])))){
+		textOut=textIn;
+		return textOut;
+	}
+
+}
+
 var x = setInterval(function (){
 	if (innerHeight>800){
 		document.body.style.height="".concat(innerHeight,"px");
