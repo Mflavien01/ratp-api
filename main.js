@@ -1,13 +1,17 @@
 var i=0;
 var j=1;
+var storage=false;
+
 function testStorage() {
        if (localStorage.lenght!=0){
-	document.getElementById("directionSelect").value=localStorage.getItem("direction");
-	document.getElementById("gareSelect").value=localStorage.getItem("gare");
-}else {
-	var direction;
- 	var gare;
-}
+	       document.getElementById("directionSelect").value=localStorage.getItem("direction");
+	       document.getElementById("gareSelect").value=localStorage.getItem("gare");
+	       storage=true;
+	}else {
+		var direction;
+ 		var gare;
+		storage=true;
+	}
 }
 
 var x = setInterval(function (){
@@ -16,8 +20,10 @@ var x = setInterval(function (){
 	}
 	var direction = document.getElementById("directionSelect").value;
  	var gare = document.getElementById("gareSelect").value;
-	localStorage.setItem("direction",direction);
-	localStorage.setItem("gare",gare);
+	if (storage==true){
+		localStorage.setItem("direction",direction);
+		localStorage.setItem("gare",gare);
+	}
 
   var endpoint = ''.concat('https://api-ratp.pierre-grimaud.fr/v4/schedules/rers/b/',gare,'/',direction);
 
