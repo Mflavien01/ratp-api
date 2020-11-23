@@ -1,12 +1,12 @@
 var i=0;
 var j=1;
-var storage=false;
+var storage=true;
 
 function testStorage() {
-       if (localStorage.lenght!=0){
-	       document.getElementById("directionSelect").value=localStorage.getItem("direction");
-	       document.getElementById("gareSelect").value=localStorage.getItem("gare");
-	       storage=true;
+    if (localStorage.lenght!=0){
+	    document.getElementById("directionSelect").value=localStorage.getItem("direction");
+	    document.getElementById("gareSelect").value=localStorage.getItem("gare");
+	    storage=true;
 	}else {
 		var direction;
  		var gare;
@@ -14,10 +14,30 @@ function testStorage() {
 	}
 }
 
-function compteARebours(textIn){
+function compteARebours(textIn, now){
 	var textOut;
+	textIn=String(textIn);
 	if (isNaN(parseInt("".concat(textIn[0], textIn[1])))){
 		textOut=textIn;
+		return textOut;
+	}else {
+		var heure=parseInt("".concat(textIn[0], textIn[1]));
+		var minute=parseInt("".concat(textIn[3], textIn[4]));
+		var heureTrain=new Date(Date.now());
+		heureTrain.setHours(heure, minute, 00);
+		var time=heureTrain.getTime()-now.getTime();
+		var time = Math.floor(time / (1000 * 60));
+		var voie="";
+		if(textIn[6]=== undefined){
+			textOut="".concat(time, " min ");
+		}else{
+			for (let i = 5; i < 20; i++) {
+				if(textIn[i]!==undefined){
+					voie+=textIn[i];
+				}
+			}
+			textOut="".concat(time, " min ", voie);
+		}
 		return textOut;
 	}
 
@@ -46,9 +66,9 @@ xhr.onreadystatechange = function() {
 		if (response.result.schedules[i+j].message[6]=="t" || response.result.schedules[i+j].message[0]=="s"){
 			j++;
 		}
-		document.getElementById("horaire1").innerHTML= "".concat("Prochain passage à : ", response.result.schedules[i].message);
-		document.getElementById("horaire2").innerHTML="".concat("2ème passage à : ", response.result.schedules[i+j].message);
-		document.getElementById("horaire3").innerHTML="".concat("3ème passage à : ", response.result.schedules[i+j+1].message);
+		document.getElementById("horaire1").innerHTML= "".concat("Prochain passage : ", compteARebours(response.result.schedules[i].message, new Date (response._metadata.date)));
+		document.getElementById("horaire2").innerHTML="".concat("2ème passage : ", compteARebours(response.result.schedules[i+j].message, new Date (response._metadata.date)));
+		document.getElementById("horaire3").innerHTML="".concat("3ème passage : ", compteARebours(response.result.schedules[i+j+1].message, new Date (response._metadata.date)));
 	}
 
 };
