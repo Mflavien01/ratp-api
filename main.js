@@ -14,7 +14,7 @@ function testStorage() {
 	}
 }
 
-/*function compteARebours(textIn, now){
+function compteARebours(textIn, now){
 	var textOut;
 	textIn=String(textIn);
 	if (isNaN(parseInt("".concat(textIn[0], textIn[1])))){
@@ -41,7 +41,7 @@ function testStorage() {
 		return textOut;
 	}
 
-}*/
+}
 
 var x = setInterval(function (){
 	if (innerHeight>800){
