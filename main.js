@@ -3,7 +3,7 @@ var j=1;
 var storage=false;
 
 function testStorage() {
-    if (localStorage.lenght!=0){
+    if (localStorage.length!=0){
 	    document.getElementById("directionSelect").value=localStorage.getItem("direction");
 	    document.getElementById("gareSelect").value=localStorage.getItem("gare");
 	    storage=true;
