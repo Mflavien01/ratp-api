@@ -92,7 +92,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("titre").style.marginLeft = "30%";
 	document.getElementById("titre").style.marginRight = "30%";
 	document.getElementById("lien").style.whidth = "25%";
-	//document.getElementById("lien").style.fontSize = "22px";
+	document.getElementById("lien").style.fontSize = "16px";
 	document.getElementById("br").innerHTML = "";
 	document.getElementById("content").style.marginLeft = null;
 	document.getElementById("content").style.marginRight = null;
@@ -114,7 +114,7 @@ if (window.screen.width > window.screen.height){
 	document.getElementById("titre").style.marginLeft = "5%";
 	document.getElementById("titre").style.marginRight = "5%";
 	document.getElementById("lien").style.whidth = "30%";
-	document.getElementById("lien").style.fontSize = "30px";
+	document.getElementById("lien").style.fontSize = "24px";
 	document.getElementById("br").innerHTML = "<br><br><br><br>";
 	document.getElementById("content").style.marginLeft = "10%";
 }
