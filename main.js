@@ -49,6 +49,7 @@ var x = setInterval(function (){
 	}
 	var direction = document.getElementById("directionSelect").value;
  	var gare = document.getElementById("gareSelect").value;
+ 	var unite = document.getElementById("uniteSelect").value;
 	if (storage==true){
 		localStorage.setItem("direction",direction);
 		localStorage.setItem("gare",gare);
@@ -66,9 +67,19 @@ xhr.onreadystatechange = function() {
 		if (response.result.schedules[i+j].message[6]=="t" || response.result.schedules[i+j].message[0]=="s"){
 			j++;
 		}
-		document.getElementById("horaire1").innerHTML= "".concat("Prochain passage : ", compteARebours(response.result.schedules[i].message, new Date (response._metadata.date)));
-		document.getElementById("horaire2").innerHTML="".concat("2ème passage : ", compteARebours(response.result.schedules[i+j].message, new Date (response._metadata.date)));
-		document.getElementById("horaire3").innerHTML="".concat("3ème passage : ", compteARebours(response.result.schedules[i+j+1].message, new Date (response._metadata.date)));
+		// pour les minute
+		if (unite=="min"){
+			document.getElementById("horaire1").innerHTML= "".concat("Prochain passage : ", compteARebours(response.result.schedules[i].message, new Date (response._metadata.date)));
+			document.getElementById("horaire2").innerHTML="".concat("2ème passage : ", compteARebours(response.result.schedules[i+j].message, new Date (response._metadata.date)));
+			document.getElementById("horaire3").innerHTML="".concat("3ème passage : ", compteARebours(response.result.schedules[i+j+1].message, new Date (response._metadata.date)));
+		}
+		
+		if (unite=="heure"){
+			document.getElementById("horaire1").innerHTML= "".concat("Prochain passage : ", response.result.schedules[i].message);
+			document.getElementById("horaire2").innerHTML="".concat("2ème passage : ", response.result.schedules[i+j].message);
+			document.getElementById("horaire3").innerHTML="".concat("3ème passage : ", response.result.schedules[i+j+1].message);
+		}
+	
 	}
 
 };
