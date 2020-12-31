@@ -1,6 +1,7 @@
 var i=0;
 var j=1;
 var storage=false;
+var direct=""
 
 function testStorage() {
     if (localStorage.length>1){
@@ -67,17 +68,35 @@ xhr.onreadystatechange = function() {
 		if (response.result.schedules[i+j].message[6]=="t" || response.result.schedules[i+j].message[0]=="s"){
 			j++;
 		}
+		if (response.result.schedules[i].code == "EMAL" || response.result.schedules[i].code == "EMOI" || response.result.schedules[i].code == "EVAL" ||response.result.schedules[i].code == "EVOL" ||response.result.schedules[i].code == "IHOP" ||response.result.schedules[i].code == "PAKE" ||response.result.schedules[i].code == "PAPO" ||response.result.schedules[i].code == "PCIL"){
+			direct1="train direct";
+		}
+		else{
+			direct1="train omnibus";
+		}
+		if (response.result.schedules[i+j].code == "EMAL" || response.result.schedules[i+j].code == "EMOI" || response.result.schedules[i+j].code == "EVAL" ||response.result.schedules[i+j].code == "EVOL" ||response.result.schedules[i+j].code == "IHOP" ||response.result.schedules[i+j].code == "PAKE" ||response.result.schedules[i+j].code == "PAPO" ||response.result.schedules[i+j].code == "PCIL"){
+			direct2="train direct";
+		}
+		else{
+			direct2="train omnibus";
+		}
+		if (response.result.schedules[i+j+1].code == "EMAL" || response.result.schedules[i+j+1].code == "EMOI" || response.result.schedules[i+j+1].code == "EVAL" ||response.result.schedules[i+j+1].code == "EVOL" ||response.result.schedules[i+j+1].code == "IHOP" ||response.result.schedules[i+j+1].code == "PAKE" ||response.result.schedules[i+j+1].code == "PAPO" ||response.result.schedules[i+j+1].code == "PCIL"){
+			direct3="train direct";
+		}
+		else{
+			direct3="train omnibus";
+		}
 		// pour les minute
 		if (unite=="min"){
-			document.getElementById("horaire1").innerHTML= "".concat("Prochain passage : ", compteARebours(response.result.schedules[i].message, new Date (response._metadata.date)));
-			document.getElementById("horaire2").innerHTML="".concat("2ème passage : ", compteARebours(response.result.schedules[i+j].message, new Date (response._metadata.date)));
-			document.getElementById("horaire3").innerHTML="".concat("3ème passage : ", compteARebours(response.result.schedules[i+j+1].message, new Date (response._metadata.date)));
+			document.getElementById("horaire1").innerHTML= "".concat("Prochain passage : ", compteARebours(response.result.schedules[i].message, ", ", new Date (response._metadata.date)),", ", direct1);
+			document.getElementById("horaire2").innerHTML="".concat("2ème passage : ", compteARebours(response.result.schedules[i+j].message,", ", new Date (response._metadata.date)),", ", direct2);
+			document.getElementById("horaire3").innerHTML="".concat("3ème passage : ", compteARebours(response.result.schedules[i+j+1].message,", ", new Date (response._metadata.date)),", ", direct3);
 		}
 		
 		if (unite=="heure"){
-			document.getElementById("horaire1").innerHTML= "".concat("Prochain passage : ", response.result.schedules[i].message);
-			document.getElementById("horaire2").innerHTML="".concat("2ème passage : ", response.result.schedules[i+j].message);
-			document.getElementById("horaire3").innerHTML="".concat("3ème passage : ", response.result.schedules[i+j+1].message);
+			document.getElementById("horaire1").innerHTML= "".concat("Prochain passage : ", response.result.schedules[i].message,", ", direct1);
+			document.getElementById("horaire2").innerHTML="".concat("2ème passage : ", response.result.schedules[i+j].message,", ", direct2);
+			document.getElementById("horaire3").innerHTML="".concat("3ème passage : ", response.result.schedules[i+j+1].message,", ", direct3);
 		}
 	
 	}
