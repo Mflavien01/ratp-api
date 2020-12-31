@@ -88,9 +88,9 @@ xhr.onreadystatechange = function() {
 		}
 		// pour les minute
 		if (unite=="min"){
-			document.getElementById("horaire1").innerHTML= "".concat("<u>Prochain passage :</u> <b>", compteARebours(response.result.schedules[i].message), "</b>, ", compteARebours(new Date (response._metadata.date)),"</b>, <i>", direct1, "</i>");
-			document.getElementById("horaire2").innerHTML="".concat("<u>2ème passage :</u> ", compteARebours(response.result.schedules[i+j].message),", ", compteARebours(new Date (response._metadata.date)),"</b>, <i>", direct2, "</i>");
-			document.getElementById("horaire3").innerHTML="".concat("<u>3ème passage :</u> ", compteARebours(response.result.schedules[i+j+1].message),", ", compteARebours(new Date (response._metadata.date)),"</b>, <i>", direct3, "</i>");
+			document.getElementById("horaire1").innerHTML= "".concat("<u>Prochain passage :</u> <b>", compteARebours(response.result.schedules[i].message, new Date (response._metadata.date)),"</b>, <i>", direct1, "</i>");
+			document.getElementById("horaire2").innerHTML="".concat("<u>2ème passage :</u> <b>", compteARebours(response.result.schedules[i+j].message, new Date (response._metadata.date)),"</b>, <i>", direct2, "</i>");
+			document.getElementById("horaire3").innerHTML="".concat("<u>3ème passage :</u> <b>", compteARebours(response.result.schedules[i+j+1].message, new Date (response._metadata.date)),"</b>, <i>", direct3, "</i>");
 		}
 		
 		if (unite=="heure"){
